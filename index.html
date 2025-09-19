@@ -157,19 +157,20 @@
         }
 
         /* ===== HERO SECTION ===== */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23222" width="1200" height="600"/><rect fill="%23333" x="100" y="100" width="200" height="400"/><rect fill="%23444" x="350" y="50" width="300" height="500"/><rect fill="%23555" x="700" y="80" width="250" height="450"/><rect fill="%23d4af37" x="980" y="120" width="180" height="380"/></svg>');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=100');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
 
         .hero::before {
             content: '';
@@ -773,51 +774,79 @@
         </div>
     </section>
 
-    <!-- Properties Section -->
-    <section id="properties" class="properties section">
-        <div class="container">
-            <h2 class="section-title">Featured Properties</h2>
-            <div class="properties-grid">
-                <div class="property-card">
-                    <div class="property-image"></div>
-                    <div class="property-info">
-                        <div class="property-price">$2,450,000</div>
-                        <h3 class="property-title">Luxury Penthouse Downtown</h3>
-                        <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 4 Beds</span>
-                            <span><i class="fas fa-bath"></i> 3 Bath</span>
-                            <span><i class="fas fa-ruler-combined"></i> 3,200 sqft</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="property-card">
-                    <div class="property-image"></div>
-                    <div class="property-info">
-                        <div class="property-price">$3,890,000</div>
-                        <h3 class="property-title">Modern Villa with Pool</h3>
-                        <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 5 Beds</span>
-                            <span><i class="fas fa-bath"></i> 4 Bath</span>
-                            <span><i class="fas fa-ruler-combined"></i> 4,800 sqft</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="property-card">
-                    <div class="property-image"></div>
-                    <div class="property-info">
-                        <div class="property-price">$1,750,000</div>
-                        <h3 class="property-title">Elegant Townhouse</h3>
-                        <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 3 Beds</span>
-                            <span><i class="fas fa-bath"></i> 2 Bath</span>
-                            <span><i class="fas fa-ruler-combined"></i> 2,400 sqft</span>
-                        </div>
+   <!-- Properties Section -->
+<section id="properties" class="properties section">
+    <div class="container">
+        <h2 class="section-title">Featured Properties</h2>
+        <div class="properties-grid">
+
+            <!-- Property 1: Luxury Penthouse Downtown -->
+            <div class="property-card">
+                <div class="property-image" style="
+                    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80');
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 250px;
+                "></div>
+                <div class="property-info">
+                    <div class="property-price">$2,450,000</div>
+                    <h3 class="property-title">Luxury Penthouse Downtown</h3>
+                    <div class="property-features">
+                        <span><i class="fas fa-bed"></i> 4 Beds</span>
+                        <span><i class="fas fa-bath"></i> 3 Bath</span>
+                        <span><i class="fas fa-ruler-combined"></i> 3,200 sqft</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <!-- Property 2: Modern Villa with Pool -->
+            <div class="property-card">
+                <div class="property-image" style="
+                    background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80');
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 250px;
+                "></div>
+                <div class="property-info">
+                    <div class="property-price">$3,890,000</div>
+                    <h3 class="property-title">Modern Villa with Pool</h3>
+                    <div class="property-features">
+                        <span><i class="fas fa-bed"></i> 5 Beds</span>
+                        <span><i class="fas fa-bath"></i> 4 Bath</span>
+                        <span><i class="fas fa-ruler-combined"></i> 4,800 sqft</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 3: Elegant Townhouse -->
+            <div class="property-card">
+                <div class="property-image" style="
+                    background-image: url('https://edwardgeorgelondon.com/wp-content/uploads/2024/10/Elegant-white-stucco-facade-with-rich-brown-window-frames-and-forest-green-accents.webp');
+                    background-size: cover;
+                    background-position: center;
+                    min-height: 250px;
+                "></div>
+                <div class="property-info">
+                    <div class="property-price">$1,750,000</div>
+                    <h3 class="property-title">Elegant Townhouse</h3>
+                    <div class="property-features">
+                        <span><i class="fas fa-bed"></i> 3 Beds</span>
+                        <span><i class="fas fa-bath"></i> 2 Bath</span>
+                        <span><i class="fas fa-ruler-combined"></i> 2,400 sqft</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CSS Fix for overlay icon -->
+<style>
+.property-image::before {
+    content: none; /* removes default overlay icon */
+}
+</style>
     <!-- Features Section -->
     <section id="features" class="features section">
         <div class="container">
